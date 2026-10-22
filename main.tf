@@ -1,5 +1,5 @@
 locals {
-  identifier = "${var.environment}-${var.name}"
+  identifier = "{$var.project}-${var.environment}-${var.name}"
 }
 resource "terraform_data" "service" {
   input = {
